@@ -1,0 +1,13 @@
+1. Terraform.lock.hcl -> 
+                        Is the file which record the extact version of the provider 
+                        plugins {AWS, GCP, AZURE}
+                        
+2. File structure -> 
+                     terraform.tfvars --> variable.tf  --> main.tf
+
+3. If terraform.tfvars if different ->
+                     $ terraform plan -var-file ="dev.tfvars" 
+                     $ terraform apply -var-file ="dev.tfvars"
+
+4. We override configuration file by using ->
+                    $ terraform plan -var "type=t2.nano"
