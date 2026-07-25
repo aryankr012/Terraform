@@ -1,0 +1,12 @@
+1. State file -> 
+                It is a file which compare desired state and current state.
+
+                If a state file is manauly deleted --> Then we apply --> terraform apply 
+                    --> New instance will be created --> because the state which is stored 
+                        is delete
+
+                If we manauly stoped the instance --> then terraform will not able to start
+                --> Because there is no api provided to start the instance
+
+                If manually change the configuration of instance and --> the configuration is 
+                not present in the main.tf file then --> the changes are applicable in the instance 
