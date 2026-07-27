@@ -1,0 +1,16 @@
+1.Remote state file ->
+                    A remote state file means the Terraform state (terraform.tfstate) is 
+                    stored in a remote location instead of on your local computer.
+
+2.problem if state file is stored in local ->
+                            Different copies of the state.
+                            Conflicting changes.
+                            Difficult to collaborate.
+                            Risk of losing the state if a laptop fails.
+
+3.Remote state with state locking ->
+                            A remote state file is a Terraform state file stored in a shared 
+                            backend (such as Amazon S3) instead of on a local machine. 
+                            It enables collaboration, provides a single source of truth for 
+                            infrastructure state, and is commonly combined with state locking
+                             to prevent concurrent modifications.
